@@ -1,31 +1,15 @@
+import { Header } from '@/components/Header'
+import { Main } from '@/components/Main'
 import { Sidebar } from '@/components/Sidebar'
-import { Inter } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-    <div className='flex h-screen bg-black text-white border-orange-700'>
+    <div className='relative flex flex-row h-screen w-screen bg-slate-900 text-white border-orange-700'>
       <Sidebar />
-      <main className='flex flex-col justify-between relative  border-white w-full'>
-        <header className='absolute border-red-700'>
-          <div>Arrows Navigation</div>
-          <button>Premium</button>
-          <button>Support</button>
-          <button>Download</button>
-          <div></div>
-          <button>Sign up</button>
-          <button>Log in</button>
-        </header>
-        <div className=' border-blue-700'>
-          <section>
-            <h1>Spotify Playlist</h1>
-          </section>
-          <section>
-            <h1>Focus</h1>
-          </section>
-        </div>
-        <footer className=' border-violet-700'>
+      <main className='relative flex flex-col border-white w-screen py-2 mr-2 '>
+        <Header />
+        <Main />
+        <footer className='absolute w-full bottom-0 rounded-b-lg border-violet-700'>
           <div>Company</div>
           <div>Communities</div>
           <div>Useful links</div>

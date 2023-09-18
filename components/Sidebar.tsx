@@ -8,23 +8,29 @@ import { PiMagnifyingGlassFill, PiMagnifyingGlass } from 'react-icons/pi';
 const Sidebar = () => {
     return (
         <aside className='flex flex-col border-green-700 p-2 w-[552px]'>
-            <div className='flex flex-col gap-5 bg-sidebar-bg mb-2 rounded-lg p-5'>
+            <div className='flex flex-col gap-5 bg-primary-bg mb-2 rounded-lg py-4 px-5'>
                 <SpotifyLogo />
                 <IconButton ActiveIcon={GoHomeFill} InactiveIcon={GoHome} text='Home' />
                 <IconButton InactiveIcon={PiMagnifyingGlass} ActiveIcon={PiMagnifyingGlassFill} text='Search' />
             </div>
-            <div className='bg-sidebar-bg rounded-lg flex flex-col h-screen'>
+            <div className='bg-primary-bg rounded-lg flex flex-col h-full'>
                 <div className='border-green-700 flex flex-col h-full'>
                     <div className='flex items-center justify-between px-5 py-4'>
                         <IconButton ActiveIcon={BiLibrary} InactiveIcon={BiLibrary} text='Your Library' />
                         <BiPlus className='text-2xl cursor-pointer text-secondary-text hover:text-white hover:bg-[#1a1a1a] rounded-full' />
                     </div>
                     <div className='flex flex-col gap-5 px-2 pb-2'>
-                        <SidebarCard title='Create your first playlist' description='Its easy, well help you'
-                            buttonText='Create playlist' />
+                        <SidebarCard
+                            title='Create your first playlist'
+                            description="It's easy, we'll help you"
+                            buttonText='Create playlist'
+                        />
 
-                        <SidebarCard title='Lets find some podcasts to follow' description='Well keep you updated on new episodes'
-                            buttonText='Browse Podcast' />
+                        <SidebarCard
+                            title="Let's find some podcasts to follow"
+                            description="We'll keep you updated on new episodes"
+                            buttonText='Browse podcasts'
+                        />
                     </div>
                 </div>
                 <div className='flex flex-wrap gap-5 text-xs/[10px] text-secondary-text mt-8 px-6 font-thin'>
