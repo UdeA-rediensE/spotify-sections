@@ -1,8 +1,7 @@
-import Image from 'next/image'
 import { MainCard } from './MainCard';
 const Main = () => {
     return (
-        <div className='absolute w-full rounded-t-lg bg-primary-bg border border-blue-700 pt-[72px] px-6'>
+        <div className='absolute w-full rounded-t-lg bg-primary-bg border-blue-700 pt-[72px] px-6 '>
             <section className="">
                 <div className="flex flex-row justify-between items-center">
                     <h1 className="text-2xl text-white font-extrabold hover:underline cursor-pointer">Spotify Playlists</h1>
@@ -26,7 +25,7 @@ const Main = () => {
                     />
                     <MainCard
                         title="Rock Classics"
-                        description="Rock legends & epic songs that continue to..."
+                        description="Rock legends & epic songs that continue to.."
                         image="/rock.jpeg"
                     />
                     <MainCard
@@ -41,7 +40,7 @@ const Main = () => {
                     />
                     <MainCard
                         title="Mega Hit Mix"
-                        description="A mega mix of 75 favorites from the lasta.."
+                        description="A mega mix of 75 favorites from the last..."
                         image="/ariana.jpeg"
                     />
                 </div>

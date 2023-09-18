@@ -4,7 +4,7 @@ import { TextButton } from './TextButton';
 
 const Header = () => {
     return (
-        <header className='sticky flex flex-row justify-between items-center z-30 bg-[rgb(0,0,0,0.7)] py-3 rounded-t-lg  border-red-700'>
+        <header className='sticky top-0 flex flex-row justify-between items-center z-30 bg-[rgb(0,0,0,0.7)] py-3 rounded-t-lg  border-red-700 overflow-hidden'>
             <div className='text-2xl pl-7 space-x-2'>
                 <button className='bg-[#050505] rounded-full cursor-not-allowed'>
                     <GoChevronLeft className='m-1 ' />
