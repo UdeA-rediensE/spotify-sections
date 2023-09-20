@@ -1,14 +1,10 @@
 interface ButtonProps {
     text: string;
-    height?: string;
-    width?: string;
 }
-const Button = ({ text, height, width }: ButtonProps) => {
-    const classes = 'bg-white text-black text-[0.9rem] font-extrabold px-4 py-1 rounded-full hover:scale-105';
-    const style = { width, height };
+const Button = ({ text}: ButtonProps) => {
 
     return (
-        <button className={classes} style={style}>{text}</button>
+        <button className="bg-white text-black font-extrabold rounded-full text-sm hover:scale-105 px-4 py-[6px]">{text}</button>
     );
 };
 

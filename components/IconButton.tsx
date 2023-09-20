@@ -10,16 +10,24 @@ interface IconButtonProps {
 const IconButton = ({ InactiveIcon, ActiveIcon, text }: IconButtonProps) => {
     const [isActive, setIsActive] = useState(false);
 
-    const toggleIcon = () => {
-        setIsActive(!isActive);
-    }
+    const handleFocus = () => setIsActive(true)
+    const handleBlur = () => setIsActive(false)    
 
     return (
-        <div className={`flex gap-4 ${isActive ? 'text-white' : 'text-secondary-text'} hover:text-white items-center cursor-pointer`} onClick={toggleIcon}>
-            {isActive ? <ActiveIcon className='text-3xl' /> : <InactiveIcon className='text-3xl' />}
+        <button
+            className={`flex gap-4 ${isActive ? 'text-white' : 'text-secondary-text'
+                } hover:text-white items-center cursor-pointer`}
+            onFocus={handleFocus}
+            onBlur={handleBlur}
+        >
+            {isActive ? (
+                <ActiveIcon className='text-3xl' />
+            ) : (
+                <InactiveIcon className='text-3xl' />
+            )}
             <span className='font-bold'>{text}</span>
-        </div>
+        </button>
     );
-}
+};
 
 export { IconButton };
