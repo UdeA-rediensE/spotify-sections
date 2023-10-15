@@ -25,8 +25,8 @@ const MainCard = ({ title, description, image }: MainCardProps) => {
             {description}
           </p>
         </div>
-        <div className="absolute w-full h-full flex opacity-0 hover:opacity-100 transition-all ease-in duration-300 top-0 translate-y-2 hover:translate-y-0 ">
-          <button className="bg-[#1fdf64] rounded-full p-4 flex absolute left-[111px] top-[110px] hover:scale-105 ">
+        <div className="absolute w-full h-full flex top-0 group ">
+          <button className="bg-[#1fdf64] rounded-full p-4 absolute left-[111px] top-[110px] opacity-0 group-hover:opacity-100 group-hover:scale-105 translate-y-2 group-hover:translate-y-0 transition-all duration-200 ease-in">
             <FaPlay className="text-black " />
           </button>
         </div>
