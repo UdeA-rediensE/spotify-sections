@@ -4,7 +4,7 @@ import { Sidebar } from "@/components/Sidebar";
 import "overlayscrollbars/overlayscrollbars.css";
 import { OverlayScrollbarsComponent } from "overlayscrollbars-react";
 
-export default function Home() {
+const Home = () => {
   return (
     <div className="flex h-screen p-2 space-x-2 bg-black text-white">
       <Sidebar />
@@ -31,7 +31,7 @@ export default function Home() {
         <footer>
           <div>
             <h4>PREVIEW OF SPOTIFY</h4>
-            <span>Sign uo to get unlimited songs and podscasts with occasional ads. No credit card needed</span>
+            <span>Sign uo to get unlimited songs and podcasts with occasional ads. No credit card needed</span>
           </div>
           <div>
             <button className="text-black font-extrabold text-sm hover:scale-105" >
@@ -42,4 +42,6 @@ export default function Home() {
       </div> */}
     </div>
   );
-}
+};
+
+export default Home;

@@ -71,10 +71,3 @@ body {
   grid-auto-flow: column;
   gap: 24px;
 }
-
-.transition-ease {
-  transition-timing-function: ease;
-  transition-duration: 0.3s;
-  transition-property: all;
-  touch-action: manipulation;
-}

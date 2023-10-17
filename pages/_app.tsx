@@ -4,10 +4,12 @@ import { Nunito_Sans } from "next/font/google";
 
 const nunito = Nunito_Sans({ subsets: ["latin"] });
 
-export default function App({ Component, pageProps }: AppProps) {
+const App = ({ Component, pageProps }: AppProps) => {
   return (
     <main className={`${nunito.className}`}>
       <Component {...pageProps} />
     </main>
   );
-}
+};
+
+export default App;

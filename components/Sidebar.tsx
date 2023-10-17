@@ -8,6 +8,7 @@ import {
   PiMagnifyingGlass,
   PiGlobeSimpleBold,
 } from "react-icons/pi";
+import Link from "next/link";
 
 const Sidebar = () => {
   return (
@@ -45,44 +46,43 @@ const Sidebar = () => {
             />
           </div>
         </div>
-        {/* aca es */}
         <div className="text-[0.65rem] text-secondary-text leading-8 font-semibold">
           <div className="flex flex-col   my-8 px-6 ">
             <div className="flex flex-wrap">
               <div className="mr-4">
-                <a href="#" className="mb-2">
+                <Link href="/" className="mb-2">
                   Legal
-                </a>
+                </Link>
               </div>
               <div className="mr-4">
-                <a href="#" className="mb-2">
+                <Link href="/" className="mb-2">
                   Privacy Center
-                </a>
+                </Link>
               </div>
               <div className="mr-4">
-                <a href="#" className="mb-2">
+                <Link href="/" className="mb-2">
                   Privacy Policy
-                </a>
+                </Link>
               </div>
               <div className="mr-4">
-                <a href="#" className="mb-2">
+                <Link href="/" className="mb-2">
                   Cookies
-                </a>
+                </Link>
               </div>
               <div className="mr-4">
-                <a href="#" className="mb-2">
+                <Link href="/" className="mb-2">
                   About Ads
-                </a>
+                </Link>
               </div>
               <div className="mr-4">
-                <a href="#" className="mb-2">
+                <Link href="/" className="mb-2">
                   Accessibility
-                </a>
+                </Link>
               </div>
             </div>
-            <a href="#" className="w-fit hover:underline">
+            <Link href="/" className="w-fit hover:underline">
               <span className=" ">Cookies</span>
-            </a>
+            </Link>
           </div>
           <div className="font-extrabold text-sm px-6 mb-8 text-white">
             <button className="flex flex-row px-3 py-[5px] gap-1 items-center border border-secondary-text hover:border-white hover:scale-105 rounded-full">
